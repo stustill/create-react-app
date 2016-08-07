@@ -66,7 +66,7 @@ module.exports = {
   },
   resolve: {
     // These are the reasonable defaults supported by the Node ecosystem.
-    extensions: ['.js', '.json', ''],
+    extensions: ['.js', '.ts', '.tsx', '.json', ''],
     alias: {
       // This `alias` section can be safely removed after ejection.
       // We do this because `babel-runtime` may be inside `react-scripts`,
@@ -99,10 +99,9 @@ module.exports = {
     loaders: [
       // Process JS with Babel.
       {
-        test: /\.js$/,
+        test: /\.tsx?$/,
         include: paths.appSrc,
-        loader: 'babel',
-        query: require('./babel.dev')
+        loader: 'awesome-typescript'
       },
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.

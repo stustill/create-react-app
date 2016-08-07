@@ -28,6 +28,7 @@
     "react-scripts": "./bin/react-scripts.js"
   },
   "dependencies": {
+    "@types/requirejs": "^2.1.26",
     "autoprefixer": "6.4.0",
     "babel-core": "6.11.4",
     "babel-eslint": "6.1.2",
@@ -78,10 +79,15 @@
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
+    "@types/react": "^0.14.28",
+    "@types/react-dom": "^0.14.14",
+    "awesome-typescript-loader": "^2.1.1",
     "bundle-deps": "1.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "react-test-renderer": "^15.3.0"
+    "react-test-renderer": "^15.3.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.14"

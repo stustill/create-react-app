@@ -20,10 +20,10 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
   appPackage.devDependencies = appPackage.devDependencies || {};
-  ['react', 'react-dom'].forEach(function (key) {
+  ['@types/react', '@types/react-dom', '@types/requirejs', 'react', 'react-dom'].forEach(function (key) {
     appPackage.dependencies[key] = ownPackage.devDependencies[key];
   });
-  ['react-test-renderer'].forEach(function (key) {
+  ['react-test-renderer', 'typescript', 'awesome-typescript-loader'].forEach(function (key) {
     appPackage.devDependencies[key] = ownPackage.devDependencies[key];
   });
 

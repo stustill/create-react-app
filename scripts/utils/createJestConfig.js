@@ -21,6 +21,7 @@ module.exports = (resolve, rootDir) => {
     ],
     setupTestFrameworkScriptFile: resolve('config/jest/environment.js'),
     testEnvironment: 'node',
+    testRegex: '__tests__/.*\.ts(x?)$',
     verbose: true
   };
   if (rootDir) {
